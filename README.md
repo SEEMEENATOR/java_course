@@ -1,5 +1,8 @@
+Используется плагин Smart Tomcat.
+1.Установить плагин
+2.Указать путь к Apache Tomcat
 Получать чек (в ответе должен быть CSV-файл)
-POST http://localhost:8080/check
+POST http://localhost:8081/t4/check
 
 {
 "products": [
@@ -17,10 +20,10 @@ POST http://localhost:8080/check
 }
 
 ● Вернуть товар из БД
-GET http://localhost:8080/products?id=1
+GET http://localhost:8080/t4/products?id=1
 
 ● Добавить товар в БД
-POST http://localhost:8080/products
+POST http://localhost:8080/t4/products
 
 {
 "description": "Eat 100g.",
@@ -30,7 +33,7 @@ POST http://localhost:8080/products
 }
 
 ● Обновить товар в БД
-PUT http://localhost:8080/products?id=1
+PUT http://localhost:8080/t4/products?id=1
 
 {
 "description": "Chocolate Ritter sport 100g.",
@@ -40,13 +43,13 @@ PUT http://localhost:8080/products?id=1
 }
 
 ● Удалить товар из БД
-DELETE http://localhost:8080/products?id=1
+DELETE http://localhost:8080/t4/products?id=1
 
 ● Вернуть дисконтную карту из БД
-GET http://localhost:8080/discountcards?id=1
+GET http://localhost:8080/t4/discountcards?id=1
 
 ● Добавить дисконтную карту в БД
-POST http://localhost:8080/discountcards
+POST http://localhost:8080/t4/discountcards
 
 {
 "discountCard": 5265,
@@ -54,7 +57,7 @@ POST http://localhost:8080/discountcards
 }
 
 ● Обновить дисконтную карту в БД по id.
-PUT http://localhost:8080/discountcards?id=1
+PUT http://localhost:8080/t4/discountcards?id=1
 
 {
 "discountCard": 6786,
@@ -62,4 +65,4 @@ PUT http://localhost:8080/discountcards?id=1
 }
 
 ● Удалить дисконтную карту из БД
-DELETE http://localhost:8080/discountcards?id=1
+DELETE http://localhost:8080/t4/discountcards?id=1
