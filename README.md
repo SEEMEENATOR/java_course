@@ -15,8 +15,10 @@ POST http://localhost:8080/check
 "discountCard": 1234,
 "balanceDebitCard": 100
 }
+
 ● Вернуть товар из БД
 GET http://localhost:8080/products?id=1
+
 ● Добавить товар в БД
 POST http://localhost:8080/products
 
@@ -26,6 +28,7 @@ POST http://localhost:8080/products
 "quantity": 5,
 "isWholesale": true
 }
+
 ● Обновить товар в БД
 PUT http://localhost:8080/products?id=1
 
@@ -35,10 +38,13 @@ PUT http://localhost:8080/products?id=1
 "quantity": 5,
 "isWholesale ": true
 }
+
 ● Удалить товар из БД
 DELETE http://localhost:8080/products?id=1
+
 ● Вернуть дисконтную карту из БД
 GET http://localhost:8080/discountcards?id=1
+
 ● Добавить дисконтную карту в БД
 POST http://localhost:8080/discountcards
 
