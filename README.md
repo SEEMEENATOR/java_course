@@ -1,0 +1,1 @@
+java -jar build/libs/clevertec-check-0.1.0.jar 3-1 2-5 5-1 discountCard=1111 balanceDebitCard=100 saveToFile=./result.csv datasource.url=jdbc:postgresql://localhost:5432/check datasource.username=postgres datasource.password=75980
